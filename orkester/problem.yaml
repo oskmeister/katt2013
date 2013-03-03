@@ -1,0 +1,4 @@
+source: KATT 2013
+author: PO 2013
+rights_owner: Programmeringsolympiaden
+validator: float_absolute_tolerance 1e-5
