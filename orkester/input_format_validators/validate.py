@@ -25,6 +25,7 @@ for i in xrange(N):
         assert zint_re.match(s)
     line_splitted = map(int,line.strip().split())
     assert line_splitted[0] == len(line_splitted)-1
+    assert len(set(line_splitted[1:])) == len(line_splitted[1:])
     for x in line_splitted[1:]:
         assert 1 <= x <= M
 
