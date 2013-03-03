@@ -5,8 +5,8 @@ import java.util.*;
 
 public class MullvadGen {
 	
-	static final String SAMPLES_PATH = "mullvad/data/sample/";
-	static final String SECRET_PATH = "mullvad/data/secret/";
+	static final String SAMPLES_PATH = "../";
+	static final String SECRET_PATH = "";
 	
 	static final long[] tVals = new long[] {273619947283L, 4827938117823828L, 89352, 99875, 48736284910382L, 5984738290598372L, 49820759837489238L, 12345678912345678L, 47826397482718627L, 1000000000000000000L};
 	
@@ -39,7 +39,7 @@ public class MullvadGen {
 	}
 	
 	static String generatePartyStart() {
-		int len = 1 + new Random().nextInt(100);
+		int len = 50 + new Random().nextInt(50);
 		char[] res = new char[len];
 		for (int i = 0; i < len; i++) {
 			res[i] = new Random().nextDouble() <= 0.5 ? 'A' : '.';
