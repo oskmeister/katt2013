@@ -1,4 +1,3 @@
-package mullvadar;
 import java.util.*;
 import java.io.*;
 
