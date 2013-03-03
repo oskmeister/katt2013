@@ -1,17 +1,16 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <list>
 using namespace std;
 
 int N, M;
 vector<vector<int> > reach;
 double solve() {
   double res = 0;
-  vector<list<int> > r;
+  vector<vector<int> > r;
   for (int i = 0; i < N; ++i) {
     random_shuffle(reach[i].begin(), reach[i].end());
-    r.push_back(list<int>(reach[i].begin(), reach[i].end()));
+    r.push_back(reach[i]);
   }
   random_shuffle(r.begin(), r.end());
   vector<int> used(N, 0);
@@ -23,8 +22,8 @@ double solve() {
       if (r[i].empty())
         continue;
       some = true;
-      int wh = *r[i].begin();
-      r[i].erase(r[i].begin());
+      int wh = r[i].back();
+      r[i].erase(r[i].end()-1);
       if (taken[wh])
         continue;
       taken[wh] = true;
@@ -48,7 +47,7 @@ int main() {
     }
   }
   double best = 0;
-  int iterations = 300; // 10000000 / N / M;
+  int iterations = 10000000 / N / M;
   for (int it = 0; it < iterations; ++it) {
     double s = solve();
     if (s > best) best = s;
