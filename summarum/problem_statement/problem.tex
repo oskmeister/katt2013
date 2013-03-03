@@ -7,7 +7,7 @@ Anders vill se till att skillnaden mellan de två summorna är så liten som mö
 Givet att han måste göra precis ett sådant byte, vilken är den \emph{minimala skillnad} mellan summorna som Anders kan åstadkomma?
 
 \section*{Indata}
-På första raden i indata står ett heltal $N$, antalet element i Anders och Beatrices listor. På andra raden i indata följer en lista med $N$ heltal som beskriver elementen i Anders lista. På tredje och sista raden i indata följer en lista med $N$ heltal som beskriver elementen i Beatrices lista.
+På första raden i indata står ett heltal $N$, antalet element i Anders och Beatrices listor. På andra raden i indata följer en lista med $N$ heltal som beskriver elementen i Anders lista. På tredje och sista raden i indata följer en lista med $N$ heltal som beskriver elementen i Beatrices lista. För varje tal $X$ i listorna i indata så gäller att $-10^5 \leq X \leq 10^5$.
 
 \section*{Utdata}
 Utdata ska bestå av ett heltal: den minimala skillnaden mellan summorna av Anders och Beatrices listor, efter att Anders har utfört bytet som beskrevs ovan.
@@ -17,3 +17,6 @@ Utdata ska bestå av ett heltal: den minimala skillnaden mellan summorna av Ande
 \item För 20\% av poängen gäller att $1 \leq N \leq 1000$.
 \item För full poäng gäller att $1 \leq N \leq 10^{5}$.
 \end{itemize}
+
+\section*{Exempel}
+Anta att Anders och Beatrices listor är $[5,2,3,5,1]$ respektive $[1,4,3,4,2]$. Om vi tar en femma i den första listan och byter ut mot en fyra i den andra listan så kommer listorna innehålla exakt samma element. Det innebär att båda summorna kommer vara $15$, och vi svarar då $0$.

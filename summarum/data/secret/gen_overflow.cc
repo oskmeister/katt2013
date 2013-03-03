@@ -10,14 +10,14 @@ int main() {
     cin >> N;
     cout << N << endl;
     for (int i = 0; i < N; ++i) {
-        int printedNumber = (rand()%200001)-100000;
+        int printedNumber = 100000;
         cout << printedNumber;
         if (i != N-1)
             cout << " ";
     }
     cout << endl;
     for (int i = 0; i < N; ++i) {
-        int printedNumber = (rand()%200001)-100000;
+        int printedNumber = -100000;
         cout << printedNumber;
         if (i != N-1)
             cout << " ";

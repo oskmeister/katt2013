@@ -19,7 +19,7 @@ for i in xrange(2):
     line = stdin.readline()
     assert len(line.strip().split()) == N
     for x in line.strip().split():
-        assert -10000 <= int(x) <= 100000
+        assert -100000 <= int(x) <= 100000
 
 assert len(stdin.readline()) == 0
 sys.exit(42)
