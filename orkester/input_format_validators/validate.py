@@ -16,7 +16,7 @@ assert int_re.match(line)
 
 N,M = map(int,line.strip().split())
 assert 1 <= N <= 1000 
-assert 1 <= M <= 200 
+assert 1 <= M <= 400 
 
 # check two lines with N numbers
 for i in xrange(N):
