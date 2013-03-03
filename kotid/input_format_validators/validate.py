@@ -13,8 +13,8 @@ line = stdin.readline()
 assert int2_re.match(line)
 
 n,k = map(int,line.strip().split())
-assert 1 <= n <= 100000 
-assert 1 <= k <= n
+assert 1 <= n <= 10**6 
+assert 1 <= k <= 10**8
 
 # check two lines with N numbers
 line = stdin.readline()
