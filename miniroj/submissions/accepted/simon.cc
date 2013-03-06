@@ -47,7 +47,7 @@ int main() {
                 cout << endl;
         }
         else {
-                cout << "Fel i Haxx" << endl;
+                cout << "fel" << endl;
         }
         return 0;
 }

@@ -15,7 +15,7 @@ public class MinirojPartial {
 		boolean[] res1 = solve(true);
 		boolean[] res2 = solve(false);
 		if (res1 == null && res2 == null) {
-			System.out.println("Fel i haxx");
+			System.out.println("fel");
 		} else {
 			StringBuilder sb = new StringBuilder();
 			for (int i = 0; i < N; i++) {

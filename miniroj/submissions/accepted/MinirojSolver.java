@@ -47,7 +47,7 @@ public class MinirojSolver {
 			} else if (safe) {
 				res.append(SAFE_CHAR);
 			} else {
-				return "Fel i haxx";
+				return "fel";
 			}
 		}
 		return res.toString();
