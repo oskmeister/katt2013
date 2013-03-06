@@ -4,10 +4,10 @@ De flesta som suttit vid en dator utan internet-uppkoppling har antagligen testa
 Rudolf har bestämt sig för att bli en professionell Minröj-spelare. Han har dock inte spelat det förut och tänker därför testa en lättare version, Miniröj, som spelas på ett spelbräde av storlek \texttt{2xN}. Han har dessutom laddat ner \emph{MinesweeperHaXX3000}, som genom att utnyttja en mystisk bugg kan avslöja innehållet i alla celler på den nedre halvan av spelplanen. Rudolf känner sig dock inte helt säker ändå, och ber dig att skriva ett program som givet den informationen han fått kan avgöra vilka celler som är säkra att klicka på.
 
 \section*{Indata}
-På den första och enda raden finns en sträng av längd $N$. Denna beskriver spelplanens nedre halva, och varje tecken är antingen ett '\texttt{X}', vilket innebär en mina, eller ett heltal $d$, $0 \leq d \leq 5$.
+På den första och enda raden finns en sträng av längd $N$. Denna beskriver spelplanens nedre halva, och varje tecken är antingen ett '\texttt{X}', vilket innebär en mina, eller ett heltal $d$, $0 \leq d \leq 5$, som beskriver att det finns $d$ minor i närheten av rutan.
 
 \section*{Utdata}
-Om det inte finns någon giltig spelplan som är kompatibel med indata ska programmet skriva ut '\texttt{Fel i Haxx}' på en rad. Skriv annars ut en sträng med $N$ tecken - '\texttt{S}', '\texttt{O}' eller '\texttt{X}' - beskrivande cellerna på den övre halvan av spelplanen. En cell beskrivs med '\texttt{S}' om cellen inte kan innehålla en mina, '\texttt{X}' om cellen helt säkert innehåller en mina och '\texttt{O}' om cellens innehåll inte går att avgöra.
+Om det inte finns någon giltig spelplan som är kompatibel med indata ska programmet skriva ut '\texttt{Fel i haxx}' på en rad (notera stor bokstav i början av raden). Skriv annars ut en sträng med $N$ tecken - '\texttt{S}', '\texttt{O}' eller '\texttt{X}' - beskrivande cellerna på den övre halvan av spelplanen. En cell beskrivs med '\texttt{S}' om cellen inte kan innehålla en mina, '\texttt{X}' om cellen helt säkert innehåller en mina och '\texttt{O}' om cellens innehåll inte går att avgöra.
 
 \section*{Delpoäng}
 \begin{itemize}
