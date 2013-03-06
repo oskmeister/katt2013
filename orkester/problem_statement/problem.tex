@@ -2,17 +2,17 @@
 
 Problemlösar-orkestern är en samling programmerarmusiker i full gång med att planera sin kommande turné. Den viktigaste uppgiften är att maximera oväsendet de kan åstadkomma i varje låt, detta för att uppnå optimal publikuppskattning.
 
-Orkestern består av $N$ musiker och har bett dig att optimera en låt som består av $M$ takter. Varje musiker har endast övat på de takter han/hon funnit intressanta och är inte kapabel att spela resten av takterna. Varje gång som en musiker spelar en takt så görs detta med oväsendet $V=1/(X+1)$ oväsen-enheter, där $X$ är antalet takter som musikern spelat tidigare i stycket. En musiker spelar alltså svagare och svagare ju fler takter han/hon spelar, vilket självklart beror på den ansträngning det tar att lyfta sitt instrument.
+Orkestern består av $N$ musiker och har bett dig att optimera en låt som består av $M$ takter. Varje musiker har endast övat på de takter han/hon funnit intressanta och är inte kapabel att spela resten av takterna. Varje gång som en musiker spelar en takt så görs detta med oväsendet $V=1/(X+1)$ oväsen-enheter, där $X$ är antalet takter som musikern spelat tidigare i låten. En musiker spelar alltså svagare och svagare ju fler takter han/hon spelar, vilket självklart beror på den ansträngning det tar att lyfta sitt instrument.
 
-Den totala mängden oväsen för låten definieras som summan av mängden oväsen i alla takter. Mängden oväsen i en takt beror i sin tur endast på den musiker som spelar starkast, alltså det maximala $V$ för de som spelar i takten eller $0$ om ingen gör det. Din uppgift är att räkna ut hur mycket oväsen som kan åstadkommas, givet att orkestern spelar optimalt.
+Oväsendet i en takt räknas ut genom att ta det maximala $V$ för de musiker som spelar då (endast den som spelar starkast hörs), eller $0$ om ingen spelar i takten. För att räkna ut det totala oväsendet i låten så adderar man sedan helt enkelt ihop oväsendet för alla takter. Din uppgift är att räkna ut hur mycket oväsen som kan åstadkommas i låten, givet att orkestern spelar optimalt.
 
-\emph{Notera att alla musiker spelar lika bra, det enda som har betydelse för mängden oväsen en musiker kan åstadkomma är antalet takter han/hon har spelat.}
+\emph{Notera att alla musiker spelar lika bra, det enda som har betydelse för mängden oväsen en musiker kan åstadkomma är antalet takter han/hon har spelat tidigare.}
 
 \section*{Indata}
 Den första raden består av två heltal, $N$ och $M$. $N$ rader följer, var och en beskrivande en musiker. Dessa rader börjar med ett heltal $T_i$, antal takter som musiker i övat in, och följs av $T_i$ stycken heltal som beskriver vilka takter musikern övat på. Varje takt representeras med ett tal mellan $1$ och $M$.
 
 \section*{Utdata}
-Skriva ut en rad med ett flyttal, den maximala mängd oväsen som kan åstadkommas i låten. Ett absolut fel mindre än $10^{-5}$ betraktas som korrekt.
+Skriv ut en rad med ett flyttal, det maximala oväsendet som kan åstadkommas i låten. Ett absolut fel mindre än $10^{-5}$ betraktas som korrekt.
 
 \section*{Delpoäng}
 \begin{itemize}
