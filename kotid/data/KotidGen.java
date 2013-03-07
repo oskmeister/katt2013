@@ -6,9 +6,9 @@ public class KotidGen {
 	static Random rand = new Random();
 	
 	static final int NUM_SECRET = 10;
-	static final int[] Nvals = new int[] {             870, 994,     78724, 86792,  85827, 97981,     98124, 99302,    999989, 1000000};
-	static final int[] Kvals = new int[] {             813, 990,     7,     85322,  51298732, 80012,  998123, 995231,  90000000, 10000000};
-	static final boolean[] randomCase = new boolean[] {true, false,  true, true,    true, false,      true, false,     true, false};
+	static final int[] Nvals = new int[] {             870, 994,     78724, 86792,  85827, 497981,     798124, 899302,    999989, 1000000};
+	static final int[] Kvals = new int[] {             813, 990,     7,     85322,  51298732, 480012,  9981023, 9952301,  90000000, 10000000};
+	static final boolean[] randomCase = new boolean[] {true, false,  true, true,    false, true,      true, false,     true, false};
 	
 	public static void main(String[] args) throws IOException {
 		// printSamples();
