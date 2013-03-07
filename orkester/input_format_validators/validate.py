@@ -16,8 +16,9 @@ assert int_re.match(line)
 
 N,M = map(int,line.strip().split())
 assert 1 <= N <= 1000 
-assert 1 <= M <= 400 
+assert 1 <= M <= 1000
 
+T = 0
 # check two lines with N numbers
 for i in xrange(N):
     line = stdin.readline()
@@ -28,6 +29,9 @@ for i in xrange(N):
     assert len(set(line_splitted[1:])) == len(line_splitted[1:])
     for x in line_splitted[1:]:
         assert 1 <= x <= M
+        T += int(X)
+
+assert T <= 20000
 
 assert len(stdin.readline()) == 0
 sys.exit(42)
