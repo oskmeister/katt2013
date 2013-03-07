@@ -117,20 +117,21 @@ template <class InIt> string rangeToString(InIt begin, InIt end, string seperato
 
 int main(){
   srand(0); // Make program deterministic
+
+  // First, read input and organize data into arrays
   mr2(int, n, m);
   VVI player_gives_tracks(n); // list of track for each player
-  VVI players_grid(n, VI(m)); // n*m grid, [i][j] if musician i can play track j
   VVI track_gives_players(m); // list of players for each track
   foru(i, n) {
     mr(int, t);
     foru(__unused, t){
       mr(int, j); j--;
       player_gives_tracks[i].push_back(j);
-      players_grid[i][j] = true;
       track_gives_players[j].push_back(i);
     }
   }
 
+  // Additional preprocessing
   VVVI common_tracks(n, VVI(n));
   VII has_commons_pairs;
   foru(i1, n){
@@ -144,6 +145,7 @@ int main(){
     }
   }
 
+  // Initially, set a starting player for each track randomly
 #define randomV(v) (v)[(rand()%sz(v))]
 #define set_track(i, j) ({if(assigned[j]>=0){count_tracks[assigned[j]]--;}; assigned[j]=i;count_tracks[i]++;})
   VI count_tracks(n);
@@ -154,10 +156,10 @@ int main(){
     set_track(i, j);
   }
   
+  // Iteratively refine the solution
   LL iterations=1000000;
   while(iterations-->0){
-    /* int i1= rand()%n, i2 = rand()%n; if(i1==i2)continue; */
-    II ii = randomV(has_commons_pairs);
+    II ii = randomV(has_commons_pairs); // We put weight on "heavy traffic" pairs of musicians
     int i1 = ii.first, i2 = ii.second;
     if(count_tracks[i1] > count_tracks[i2]) swap(i1, i2);
     VI &ct = common_tracks[i1][i2];
