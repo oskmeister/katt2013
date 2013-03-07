@@ -29,7 +29,7 @@ for i in xrange(N):
     assert len(set(line_splitted[1:])) == len(line_splitted[1:])
     for x in line_splitted[1:]:
         assert 1 <= x <= M
-        T += int(x)
+        T += 1
 
 assert T <= 20000
 
