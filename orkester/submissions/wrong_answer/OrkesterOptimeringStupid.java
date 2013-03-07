@@ -1,5 +1,3 @@
-package orkester;
-
 import java.io.*;
 import java.util.*;
 
