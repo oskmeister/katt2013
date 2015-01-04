@@ -1,3 +1,11 @@
 source: KATT 2013
-author: PO 2013
+author: Programmeringsolympiaden
 rights_owner: Programmeringsolympiaden
+license: cc by-sa
+grading:
+    on_reject: grade
+    objective: max
+    range: 0 100
+limits:
+    time_multiplier: 2
+type: scoring
